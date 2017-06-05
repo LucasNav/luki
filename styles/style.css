@@ -1,0 +1,129 @@
+body{
+  position: relative;
+}
+
+
+section, header{
+  padding-top: 60px;
+  padding-bottom: 50px;
+  min-height: 130vh;
+  /*min-height: 500px;*/
+}
+
+#maincontent{
+  background-color: lightgreen;
+  /*padding-bottom: : 100px;*/
+}
+
+#maincontent h1{
+  margin-bottom: -10px;
+}
+#maincontent small{
+  padding-top:10px;
+}
+
+#portfolio{
+  background-color: whitesmoke;
+}
+
+#about{
+  background-color: purple;
+}
+
+#contact{
+  background-color: violet;
+}
+.img-avatar{
+  max-width: 60%;
+  height: auto;
+  border-bottom: 2px solid black;
+
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+.leftdiv, .centerdiv, .rightdiv
+{
+   text-align: center;
+}
+
+
+@media only screen and (min-width: 1200px)
+{
+   .leftdiv
+   {
+      text-align: left;
+   }
+   .rightdiv
+   {
+      text-align: right;
+   }
+
+   .img-avatar{
+     height: auto;
+     width: 100%;
+     border-bottom: none;
+     border-right: 2px solid black;
+   }
+
+   #maincontent .intro-text{
+     padding-top: 60px;
+   }
+
+   #maincontent{
+     padding-top: 150px;
+   }
+
+   #maincontent small{
+     border-top: 1px solid black;
+   }
+
+   .black-square-behind img{
+     margin-left: auto;
+     margin-right: auto;
+     max-height: 60vh;
+   }
+
+   #about h1{
+     margin-top: 50px;
+     margin-bottom:100px;
+   }
+}
+
+@media only screen and (max-width: 1200px) and (orientation:portrait)
+{
+    .black-square-behind img{
+        position:absolute;
+        margin:auto;
+        width:100%;
+        height: auto;
+        top: 0; left: 0; bottom: 0; right: 0;
+
+    }
+
+    .black-square-behind{
+      position: relative;
+      background-color: black;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+      padding-top: 100%;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (orientation:landscape)
+{
+    .black-square-behind img{
+        height:60vh;
+        width: auto;
+
+    }
+}
+
+#about h1{
+  margin-bottom: 20px;
+}
